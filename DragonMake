@@ -1,0 +1,17 @@
+name: llvm-objcs-example
+id: sk.vri.llvm-objcs-example
+icmd: killall -9 SpringBoard
+depends: mobilesubstrate
+architecture: iphoneos-arm
+version: 0.0.1
+description: A cool MobileSubstrate Tweak
+author: serket
+section: Tweaks
+Example:
+  type: tweak
+  objcs: true
+  filter:
+    executables:
+    - SpringBoard
+  files:
+  - Example.m
